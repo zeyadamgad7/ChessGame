@@ -69,8 +69,7 @@ public class FrontEnd extends JPanel implements MouseListener {
     Image wkg;
 
     public FrontEnd() {
-        
-        square = new Panel();
+        //square = new Panel();
         white = true;
 
         setLayout(null);
@@ -80,18 +79,31 @@ public class FrontEnd extends JPanel implements MouseListener {
         add(undo);
         undo.setVisible(true);
 
-        bp = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackPawn.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        br = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackRook.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        bk = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackKnight.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        bb = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackBishop.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        bq = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackQueen.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        bkg = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/BlackKing.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wp = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhitePawn.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wr = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhiteRook.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wk = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhiteKnight.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wb = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhiteBishop.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wq = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhiteQueen.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
-        wkg = new ImageIcon("src/main/java/ChessGameGUI/piecesPng/WhiteKing.png").getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb1 = new ImageIcon("src\\main\\java\\pics\\BlackPawn.png");
+        bp = iconb1.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb2 = new ImageIcon("src\\main\\java\\pics\\BlackRook.png");
+        br = iconb2.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb3 = new ImageIcon("src\\main\\java\\pics\\BlackKnight.png");
+        bk = iconb3.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb4 = new ImageIcon("src\\main\\java\\pics\\BlackBishop.png");
+        bb = iconb4.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb5 = new ImageIcon("src\\main\\java\\pics\\BlackQueen.png");
+        bq = iconb5.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconb6 = new ImageIcon("src\\main\\java\\pics\\BlackKing.png");
+        bkg = iconb6.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+
+        iconw1 = new ImageIcon("src\\main\\java\\pics\\WhitePawn.png");
+        wp = iconw1.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconw2 = new ImageIcon("src\\main\\java\\pics\\WhiteRook.png");
+        wr = iconw2.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconw3 = new ImageIcon("src\\main\\java\\pics\\WhiteKnight.png");
+        wk = iconw3.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconw4 = new ImageIcon("src\\main\\java\\pics\\WhiteBishop.png");
+        wb = iconw4.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconw5 = new ImageIcon("src\\main\\java\\pics\\WhiteQueen.png");
+        wq = iconw5.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
+        iconw6 = new ImageIcon("src\\main\\java\\pics\\WhiteKing.png");
+        wkg = iconw6.getImage().getScaledInstance(95, 95, Image.SCALE_DEFAULT);
 
     }
 

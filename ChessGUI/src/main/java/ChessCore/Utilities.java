@@ -5,6 +5,7 @@ import ChessCore.Pieces.Piece;
 
 public final class Utilities {
 
+    private Player player;
     private Utilities() {
     }
 
